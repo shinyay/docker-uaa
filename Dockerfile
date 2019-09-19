@@ -11,7 +11,7 @@ RUN wget \
 # Configure the UAA
 ENV CLOUD_FOUNDRY_CONFIG_PATH=$CATALINA_HOME/temp/uaa
 RUN mkdir -p $CLOUD_FOUNDRY_CONFIG_PATH
-COPY uaa.yml $CLOUD_FOUNDRY_CONFIG_PATH/uaa.yml
+COPY uaa.yml $CLOUD_FOUNDRY_CONFIG_PATH
 
 
 # Configure Tomcat
