@@ -6,6 +6,19 @@ Cloud Foundry User Account and Authentication (CF UAA) is an identity management
 
 -[DockerHub](https://cloud.docker.com/repository/registry-1.docker.io/shinyay/uaa)
 
+### OAuth2.0
+
+OAuth 2.0 flow we can identify the following roles:
+- **Resource Owner**: the entity that can grant access to a protected resource. Typically this is the end-user.
+
+- **Resource Server**: the server hosting the protected resources. This is the API you want to access.
+
+- **Client**: the app requesting access to a protected resource on behalf of the Resource Owner.
+
+- **Authorization Server**: the server that authenticates the Resource Owner, and issues Access Tokens after getting proper authorization. In this case, UAA. Other is like Auth0.
+
+
+
 ## Demo
 
 ## Features
