@@ -17,6 +17,8 @@ OAuth 2.0 flow we can identify the following roles:
 
 - **Authorization Server**: the server that authenticates the Resource Owner, and issues Access Tokens after getting proper authorization. In this case, UAA. Other is like Auth0.
 
+![oauth2-flow](images/oauth2-generic-flow.png)
+
 
 
 ## Demo
