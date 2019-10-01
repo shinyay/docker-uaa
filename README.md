@@ -32,6 +32,15 @@ OAuth 2.0 flow we can identify the following roles:
 ### UAA Configuration `uaa.yml`
 - [required_configuration.yml](https://github.com/cloudfoundry/uaa/blob/4.35.0/uaa/src/main/resources/required_configuration.yml)
 
+### JWS Key Pair Configuration
+UAA needs to have a private key to sign each JWT that UAA issues
+
+#### OpenSSL
+```
+$ openssl genrsa -out signingkey.pem 2048
+$ openssl rsa -in signingkey.pem -pubout -out verificationkey.pem
+```
+
 ## Installation
 
 ## Licence
