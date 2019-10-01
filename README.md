@@ -19,8 +19,6 @@ OAuth 2.0 flow we can identify the following roles:
 
 ![oauth2-flow](images/oauth2-generic-flow.png)
 
-
-
 ## Demo
 
 ## Features
@@ -31,6 +29,8 @@ OAuth 2.0 flow we can identify the following roles:
 ## Requirement
 
 ## Usage
+### UAA Configuration `uaa.yml`
+- [required_configuration.yml](https://github.com/cloudfoundry/uaa/blob/4.35.0/uaa/src/main/resources/required_configuration.yml)
 
 ## Installation
 
