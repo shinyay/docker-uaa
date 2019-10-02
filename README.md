@@ -35,10 +35,22 @@ OAuth 2.0 flow we can identify the following roles:
 ### JWS Key Pair Configuration
 UAA needs to have a private key to sign each JWT that UAA issues
 
-#### OpenSSL
+#### OpenSSL for JWT
+- Authorization server will sign the JWT with the private key.
+  - `JWT_TOKEN_SIGNING_KEY`
+  - **jwt.token.signing-key**
+- Client and resource server will verify that signature with the public key.
+  - `JWT_TOKEN_VERIFICATION_KEY`
+  - **jwt.token.verification-key**
+
 ```
 $ openssl genrsa -out signingkey.pem 2048
 $ openssl rsa -in signingkey.pem -pubout -out verificationkey.pem
+```
+
+```
+export JWT_TOKEN_SIGNING_KEY=$(cat signingkey.pem)
+export JWT_TOKEN_VERIFICATION_KEY=$(cat verificationkey.pem)
 ```
 
 ## Installation
