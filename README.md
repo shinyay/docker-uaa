@@ -38,10 +38,10 @@ UAA needs to have a private key to sign each JWT that UAA issues
 #### OpenSSL for JWT
 - Authorization server will sign the JWT with the private key.
   - `JWT_TOKEN_SIGNING_KEY`
-  - **jwt.token.signing-key**
+  - **jwt.token.signing-key** (in uaa.yml)
 - Client and resource server will verify that signature with the public key.
   - `JWT_TOKEN_VERIFICATION_KEY`
-  - **jwt.token.verification-key**
+  - **jwt.token.verification-key** (in uaa.yml)
 
 ```
 $ openssl genrsa -out signingkey.pem 2048
