@@ -6,6 +6,10 @@ Cloud Foundry User Account and Authentication (CF UAA) is an identity management
 
 -[DockerHub](https://cloud.docker.com/repository/registry-1.docker.io/shinyay/uaa)
 
+### Realated Repository
+- shinyay/spring-cloud-security-gateway-getting-started
+- shinyay/spring-cloud-security-service-getting-started
+
 ### OAuth2.0
 
 OAuth 2.0 flow we can identify the following roles:
